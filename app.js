@@ -2,6 +2,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 const wrapper = document.querySelector(".sliderWrapper");
 const navbottom = document.querySelector(".navBottom");
 const faXmark = document.querySelector(".fa-chevron-down");
+const FaDown = document.querySelector(".navv .down");
 
 const products = [
   {
@@ -140,6 +141,10 @@ close.addEventListener("click", () => {
   payment.style.display = "none";
 });
 
+const XS = window.matchMedia("(max-width:320px");
+const S = window.matchMedia("(max-width:375px");
+const M = window.matchMedia("(max-width:425px");
+const L = window.matchMedia("(max-width:768px");
 const XL = window.matchMedia("(max-width: 1024px)");
 
 faXmark.onclick = () => {
@@ -147,7 +152,15 @@ faXmark.onclick = () => {
     faXmark.style.rotate = "180deg";
     faXmark.style.marginRight = "8px";
     nav.style.height = "auto";
-    if (XL.matches) {
+    if (XS.matches) {
+      faXmark.style.marginRight = "18px";
+    } else if (S.matches) {
+      faXmark.style.marginRight = "18px";
+    } else if (M.matches) {
+      faXmark.style.marginRight = "18px";
+    } else if (L.matches) {
+      faXmark.style.marginRight = "18px";
+    } else if (XL.matches) {
       faXmark.style.marginRight = "18px";
     }
   } else {
@@ -156,4 +169,18 @@ faXmark.onclick = () => {
   }
 
   c = !c;
+};
+
+FaDown.onclick = () => {
+  if (XS.matches) {
+    FaDown.style.marginRight = "202px";
+  } else if (S.matches) {
+    FaDown.style.marginRight = "0px";
+  } else if (M.matches) {
+    FaDown.style.marginRight = "0px";
+  } else if (L.matches) {
+    FaDown.style.marginRight = "0px";
+  } else if (XL.matches) {
+    FaDown.style.marginRight = "0px";
+  }
 };

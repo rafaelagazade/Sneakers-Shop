@@ -513,7 +513,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 15px 0 0 230px ;
+    margin: 15px 0 0 202px ;
     font-size: 30px;
   }
 
@@ -709,7 +709,7 @@ footer {
     display: flex;
       flex-direction: column;
     position: absolute;
-    margin: 15px 0 0 285px;
+    margin: 15px 0 0 202px;
     font-size: 30px;
   }
 
@@ -906,7 +906,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 15px 0 0 335px;
+    margin: 15px 0 0 202px;
     font-size: 30px;
   }
 
@@ -1102,7 +1102,7 @@ footer {
     display: flex;
       flex-direction: column;
     position: absolute;
-    margin: 15px 0 0 675px;
+    margin: 15px 0 0 202px;
     font-size: 30px;
   }
 
@@ -1307,7 +1307,7 @@ footer {
 
   .down {
     position: absolute;
-    margin: 15px 0 0 875px;
+    margin: 15px 0 0 202px;
     font-size: 30px;
     display: flex;
       flex-direction: column;
